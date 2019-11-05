@@ -1,0 +1,1682 @@
+
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>우동사 마크업리스트</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<style>
+		*{-webkit-text-size-adjust:none;}
+		html,body{width:100%;height:100%; min-width:800px;}
+		html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, ul, li, fieldset, form, label, leging, table, caption, tbody, tfoot, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; outline:0; font-family:NanumGothic,'나눔고딕',Dotum,'돋움',applegothic,sans-serif; font-size:13px; color:#555; /*vertical-align:baseline;*/}
+		body{line-height:1.2em; border:0;}
+		strong, em, span, wbr, a{display:inline-block;}
+		span{margin:0; padding:0; outline:0;}
+		hr{display:none}
+		ol, ul, ,dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+		fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+		address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;}
+		img{vertical-align:middle;}
+		a{cursor:pointer; text-decoration:none; color:#666;}
+		table{border-collapse:collapse;}
+		#wrap{padding:12px;}
+		#header{margin-bottom:20px;}
+		#header::after{content:''; clear:both; display:block;}
+		#header>h1{float:left; font-size:28px; color:#1a1a1a; padding-top:15px;}
+		#header>div{float:right;}
+		#header>div>p{font-size:11px; color:#888; text-align:right;}
+		div.box{border:1px solid #dedede; background:#f1f1f1; padding:12px 14px; margin-bottom:10px;}
+		h3{font-size:14px; color:#333; margin-bottom:13px;}
+		h4{font-size:14px; color:#333; margin:25px 0 8px 5px;}
+		ol.atten>li{margin-bottom:8px; padding:0; line-height:160%;}
+		ol.atten>li:last-child{margin-bottom:0;}
+		table.htmllist th,table.htmllist td{border:1px solid #ccc;}
+		table.htmllist tr:first-child td{text-align:center; font-weight:bold; border-bottom:1px solid #111 !important; height:30px; color:#000 !important; font-size:13px !important;}
+		table.htmllist th{padding:5px 6px; text-align:left; border-bottom:2px solid #4e80e8 !important; height:32px; background-color:#f3f4f8;}
+		table.htmllist th.depth2{padding: 2px 18px; text-align:left; border-bottom:1px solid #333 !important; height:30px; font-size: 12px; background-color: #fff}
+		table.htmllist td{padding:5px 6px;}
+		table.htmllist td:first-child{text-align:center;}
+		table.htmllist td:last-child{color:#888; font-size:12px;}
+		table.htmllist td:nth-child(4),table.htmllist td:nth-child(6),table.htmllist td:nth-child(7){text-align:center;}
+		table.htmllist td:nth-child(7){color:#5183eb; font-size:11px; font-weight:bold;}
+		table.htmllist td>a{display:block; width:100%; height:26px; line-height:26px; text-align:center; color:#fff; font-size:11px; font-weight:bold; vertical-align:middle; background-color:#5183eb; border:1px solid #3f6fd3; border-radius:3px;}
+		table.htmllist td>a:hover{background-color:#3f6fd3; line-height:28px;}
+		table.htmllist tr:hover>td{background-color:#fffad2;}
+		table.htmllist td.ing{text-align:center; font-size:12;}
+		table.htmllist td.end{text-align:center; font-size:12; font-weight:bold; background-color:#b8bbbf; color:#1a1a1a;}
+		/* .total{padding:10px 5px 20px} */
+		.total .tit_txt{padding-left:10px;margin-left:10px;border-left:1px solid #ddd;}
+		.total h3 + .tit_txt{padding-left:0;margin-left:0;border-left:none;}
+		.total_page_num{font-size:18px;color:#5183eb;}
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>우동사 마크업리스트</h1>
+		<div>
+			<p>Version: <b>0.0.01</b></p>
+			<p>Last Update: <b>2019.05.07</b></p>
+			<p>Coding: <b>HTML5&amp;CSS3</b></p>
+			<!-- <p>Guide: <b><a href="guide/guide.html" target="_blank">guide.html</a></b></p> -->
+		</div>
+	</div>
+	<!-- <div class="box">
+		<h3>유의사항</h3>
+		<ol class="atten">
+			<li>해당 목록은 계속 추가되거나 수정/삭제될 수 있습니다.</li>
+			<li>타겟 브라우저 : IE9+ / 구글 크롬 / 파이어폭스 / MacOS 사파리</li>
+			<li>태블릿PC 디바이스 : 안드로이드 4.1+(젤리빈) - 테스트 기종 : 삼성 갤럭시 탭S / ios 아이패드</li>
+			<li>모바일 디바이스 : 안드로이드 4.1+(젤리빈) - 테스트 기종 : 삼성 갤럭시S6, ios 아이폰5 이상</li>
+		</ol>
+	</div> -->
+	<!-- <div class="box">
+		<h3>업데이트 사항</h3>
+		<ol class="atten">
+			<li>[11/02]
+				<b>[마크업 리스트 작성]</b>
+			</li>
+			<li>[11/09]
+				<b>[마크업 리스트 작성]</b>
+			</li>
+            <li>[11/16]
+				<b>[마크업 리스트 작성]</b>
+			</li>
+			 <li>[11/21]
+				<font color="red">메인 제외한 전체 서브 페이지 - head 에서 main.css 삭제</font>
+			</li>
+			 <li>[11/29]
+				<font color="red">/01/02_view.html   사진첨부 부분 수정</font>
+			</li>
+			<li>[11/30]
+				<font color="red">/01/02_view.html   사진첨부 부분 수정</font>
+			</li>
+            <li>[12/04]
+				<font color="red">/02/03_03.html   취소부분 버튼으로 변경</font>
+			</li>
+            <li>[12/05]
+				<font color="red">/02/02_01.html   작품들 링크로 변경</font>
+			</li>
+			 <li>[12/07]
+				<font color="red">/main/index.html   슬라이드 변경 / 교육 : 수정요청사항 반영 완료 </font>
+			</li>
+            <li>[12/19]
+				<font color="red">/04/06.html  팝업 오픈 시 input창 수정 </font>
+			</li>
+			<li>[12/19]
+				<font color="red">/01/01.html 푸터 변경 </font>
+			</li>
+            <li>[12/20]
+				<font color="red">/08/error.html 텍스트로 수정 </font>
+			</li>
+            <li>[12/21]<br>
+				<font color="red">/02/02_03.html 왼쪽 이미지 조정, /01/01.html 왼쪽 이미지 조정 <br>각 서브 상단 이미지 양쪽 짤리는 현상 수정 <br>퀵메뉴 메뉴열기 모션수정 <br>각 부서별 이름/직급/전화번호/업무에 대한 위치 일정하게 변경</font>
+			</li>
+            <li>[12/24]
+				<font color="red"> 영문리스트 업데이트, /02/02_02_blue.html 마커 찍기, /02/03_02_green 19번추가,/03/02_031 서양미술사 이미지 추가, 서브 해상도 큰 pc에서 짤리는 현상 수정, 메인페이지 top버튼 수정, /06/04html 테이블 크기 동일하게 변경 <br>영문의 상단바와 하단 풋터 변경<br>영문 전체메뉴 변경<br>전시 상세페이지 링크 삭제<br>/main/index.html  상단 버튼 4개 영역과 겹쳐서 노출되고 있는부분 수정 <br>/en_04/gongmo.html 중간 텍스트 영역 겹치는부분 수정</font>
+			</li>
+			<li>[12/26]
+				<font color="red">/en_05/06.html 영문 오시는길 지도 수정</font>
+			</li>
+            <li>[12/28]
+				<font color="red">/02/02_03_garo.html, /02/02_03.html 좌측 이미지 크기 수정, /02/02_01.html select 수정, /01/01.html 파일에 퀵메뉴 추가 <br>	/02/	02_02_red.html, 02_02_black.html, 02_02_blue.html, 02_02_yellow.html 작품 핀 위치 및 닫기버튼 추가 <br>
+				/main/index.html  소마이벤트팝업 이미지영역수정 <br> /main/index.html  상단 영문/국문/SNS 버튼하고 겹쳐서 보이지 않도록 변경.<br> 	/03/01_01.html 어린이정규프로그램클릭시 노출되는 위치 변경<br> /03/01_02.html이미지변경<br> 	/01/	02.html  노트북에서 이미지 겹쳐나오는부분 변경<br> /01/01.html  썸네일영역 고정<br>
+				</font>
+			</li>
+			<li>[01/03]
+				<font color="red">/main/index.html 조각공원부분 슬라이드 왼쪽 수정,  /04/05.html 서브로케이션 수정</font>
+			</li>
+			<li>[01/04]
+				<font color="red">TOP 버튼 오버시 수정 <br>
+					메인 슬라이드 - 소마이벤트슬라이드 없을 시 pager 위치 조정
+				</font>
+			</li>
+			<li>[01/06]
+				<font color="red">
+					/02/01.html 이미지 비율에 맞춰 줄어들게 수정  <br>
+					main/index.html 슬라이드 롤링 시간 수정(main.js),  <br>
+					버튼 수정 주석표기(sub_btn05 클래스 추가) : /01/02_view.html, <br>
+					버튼 수정 주석표기(수정 190107  ho_b 클래스 삭제) :
+					/en_02/01.html, /en_05/05.html,  /en_05/06.html, <br>
+					/07/search.html, /01/201.html, /01/02_view.html(문자팝업),/01/201.html,/01/201_no_result.html, <br>
+					/02/03.html,/02/03_02.html,/02/03_03.html<br>
+					/03/02_03_01.html,/03/02_03_02.html,/03/02_04_01.html,/03/02_04_03.html,/03/02_05_01.html,/03/02_05_02.html <br>
+					/04/aca_login.html,/04/04.html,/04/05.html,/04/06.html,/04/07.html,/04/08_list.html,/04/08_view.html,/04/09.html,<br>
+					/06/02_03.html,/06/02_05.html,/06/05.html,/06/06.html,<br>
+				</font>
+			</li>
+			<li>
+				[01/08]
+				<font color="red">
+					/06/03.html 연혁 2010년대 추가 <br>
+					/main/index.html 풋터 - 패밀리사이트 활성화 되었을 때 우측하단 x버튼 추가 (index.html,main.js, main.css 수정) <br>
+					/01/01.html 풋터 - 패밀리사이트 활성화 되었을 때 우측하단 x버튼 추가 (01.html,common.js, common.css 수정) <br>
+					아이콘 전체적으로 수정 - css/images 폴더 전체적으로 업로드 필요<br>
+					/03/01_01.html 간격 수정 주석표기(수정 190108  pt20 클래스 추가) <br>
+					/03/02_02.html 달력 및 선택창 수정 (sub.css 수정)
+				</font>
+			</li>
+			<li>
+				[01/09]
+			</li>
+			<li>
+				[01/10]
+				<font color="red">
+					메인 - (IE브라우져) 조각공원 - 슬라이드 마우스오버시 흰색 빈공간생기는현상 수정 (main.css 수정) <br>
+					/06/prev01.html - 고양이 이미지 11,12 번 위치바꿈 (/06/prev01.html  수정) <br>
+					각 페이지 버튼 크기 및 아이콘 간격 수정 (main.css, sub.css, style.css 수정) <br>
+					게시판 파일 아이콘 이미지 추가 : xlsx 파일 (/images/05/ch04.png), zip 파일 (/images/05/ch05.png) <br>
+					공단 디자인 가이드 62페이지 최상단 공통영역 수정 - (common.css, main.css 수정) <br>
+					웹접근성 가이드로 인한 css 내용 수정 (common.css, sub.css, style.css, main.css)
+				</font>
+			</li>
+			<li>
+				[01/11]
+				<font color="red">
+					메인 및 서브페이지 공통 - 상단 gnb 수정 (/main/index.html, 01/01.html, main.css, common.css 수정) <br>
+					메인 - 조각공원 이미지 마우스오버시 액션 수정 (main.css) <br>
+					01/02_view.html 인스타그램 -> 트위터 수정 (이미지 및 html 수정) <br>
+					영문 메인 및 서브페이지 공통 - 상단 gnb 모바일시 KSPO만 보이게 수정 (main.css, common.css, en_01/01.html) <br>
+					조각공원>작품맵>투어신청하기 버튼 모바일 크기 및 두께 조절(style.css) <br>
+					폰트교체 - main.css, common.css 수정 <br>
+					서브로케이션 화살표 이미지 모바일버전 수정 <br>
+					영문 깨짐 수정 - (main.css, common.css, sub.css, style.css 수정) <br>
+					띄어쓰기 및 스타일 수정 - 02/03.html, 03/01_03.html, 06/02_03.html , 06/02_04.html, 06/prev04.html, 06/prev05.html, style.css 수정
+				</font>
+			</li>
+			<li>
+				[01/14]
+				<font color="red">
+					main/index.html - scroll 버튼 수정, TOP버튼 수정 (main.css, index.html 수정) <br>
+					테이블 수정 - /02/03_03.html, /03/02_03_01.html, /03/02_03_02.html, /03/02_05_01.html, /03/02_05_02.html, /10/policy.html, sub.css, style,css 수정 <br>
+					로케이션 화살표 pc/mobile 따로 설정 (/sub/location_arr_pc.png,/sub/location_arr_on_pc.png 추가, style.css 수정) <br>
+					메뉴열기버튼 오시는길 지도 위로 올라오게 수정 (common.css 수정) <br>
+					퍼블리싱가이드 페이지 추가
+				</font>
+			</li>
+            <li>
+				[01/15]
+				<font color="red">
+					폰트 굵기 두껍게 - 03/01_01.html, 03/01_02.html, 03/01_03.html, 03/01_04.html, 04/introduce.html,  04/gongmo.html, sub.css 수정 <br>
+					07/search.html 검색창 검색어삭제 x 추가 : 주석표기 [수정 0115] (07/search.html, common.js style.css 수정) <br>
+					메인 및 서브페이지 아이폰에서 푸터 전화번호 글씨 흰색으로 수정(common.css, main.css, style.css 수정) <br>
+					드로잉센터 > 등록 작가 아카이브 > 정보/작품관리 - 로케이션 모바일일경우 수정 (style.css 수정) <br>
+					02/03_02.html 테이블 바깥 div 추가 , 테이블 캡션 추가 - 주석표기 [수정 0115] <br></font>
+					<font color="red">search창 검색어지우기 x아이콘 추가된 페이지 : main/index.html, 07/search.html, 02/02_04.html -> 주석표기 [수정 0115] <br> 각 페이지 html파일 및 common.js, main.js, common.css, main.css, style.css 수정</font>
+				</font>
+			</li>
+			<li>
+				[01/16]
+				<font color="red">
+					폰트 수정 - 외부 ->내부 (main.css, common.css 수정) <br>
+					메인 푸터 주요서비스 부분 화살표 안보임 수정 (main.css 수정) <br>
+					폰트 수정 - 내부 ->외부 (main.css, common.css 수정) <br>
+					메인 영문 모바일 - 전시, 교육 영역 세로 길이 늘림 (main.css 수정)<br>
+					메인 모바일 - 조각공원영역  하단 영역 줄임 (main.css 수정) <br>
+					메인 영문 모바일 - 교육 영역 하단 늘림 (main.css 수정) <br>
+					<b>↓ 주석표기 [수정 0116]</b> <br>
+					메인 - gnb와 전체메뉴 부분 sns영역 수정 (main/index.html, main.css 수정) <br>
+					서브(공통) - gnb와 전체메뉴 부분 sns영역 수정 (01/01.html, common.css 수정) <br>
+					메인, 서브 공통 - line8,9번째 줄 -> 메타태그 삭제(2줄)
+				</font>
+			</li>
+			<li>[01/17]
+				<font color="red">
+					<b>↓ 주석표기 [수정 0117]</b> <br>
+					01/02_view.html,02/03.html : 파일첨부 input태그 안쪽 수정, js/jquery.MultiFile.min.js 수정 <br>
+					01/02_view.html,02/03.html : textarea 수정, 이미지 alt 추가<br>
+					02/02_04.html  :  href="#none" 삭제 <br>
+					02/03_02.html : h2 위치변경, col 태그 수정, id 와 for 수정<br>
+					02/03_03.html : id 와 for 수정, line 513~4번째줄 &lt;/fieldset&gt; &lt;/form&gt; 삭제 <br>
+					03/02_01.html : id 와 for 수정 <br>
+					03/02_02.html : col 태그 수정,  textarea 수정,  파일첨부 input태그 안쪽 수정, <br>
+					03/031.html :line896 &lt;/div&gt; 삭제<br>
+					03/032.html :line484 &lt;/div&gt; 삭제<br>
+					04/01.html , 04/01_no_result.html : id 와 for 수정 <br>
+					04/03.html : & lt, & gt로 변경 <br>
+					04/04.html : id 와 for 수정 <br>
+					04/05.html : label 을 span으로 교체, id 와 for 수정 <br>
+					04/06.html : label 을 span으로 교체, id 와 for 수정, class 앞 띄어쓰기 <br>
+					04/06.html : label 을 span으로 교체, input에 id 삭제<br>
+					04/08_list.html : h2 위치변경<br>
+					04/09.html : h2 위치변경<br>
+					04/10.html : h2 위치변경, line494 &lt/div> 삭제<br>
+					04/gongmo.html :  line482 &lt/div> 추가 <br>
+					06/04.html - > 422, 452, 476라인 width 수정 <br>
+					 06/prev01.html -> 520, 525, 530라인 alt 수정<br>
+					 06/prev03.html -> 472~178라인 width 수정<br>
+					06/prev04.html -> 417~423라인 width 수정<br>
+					06/prev05.html -> 441~447라인 width 수정<br>
+					10/policy.html -> 412, 413, 423, 433, 435 &lt', > 수정<br>
+					07/seach.html -> 545라인 width 수정<br>
+					common.js -> 11~14 라인 추가<br>
+					05/soma_list.html -> 366 라인 id 값 변경, 348라인 get, method 삭제<br>
+					06/03.html - > 연혁 2000.04, 2001.01 교체 <br>
+					<b>[오류사항(1월16일).ppt문서 기준] 주석표기 [수정 0117]</b><br>
+					03/02_04_02.html : line382, line657 수정 및 추가, jquery.mCustomScrollbar.min.css 추가, jquery.mCustomScrollbar.concat.min.js 추가  <br>
+					06/02_03.html -> span에 dpb 클래스 추가<br>
+					06/02_04.html -> br 태그에 class 삭제<br>
+					02/03.html -> br 태그에 class 삭제<br>
+					en_03/01_01.html -> 367,451 라인 f400 클래스 추가<br>
+                    en_03/01_02.html -> 367 라인 f400 클래스 추가<br>
+                    en_03/01_03.html -> 365 라인 f400 클래스 추가<br>
+                    en_03/01_04.html -> 367 라인 f400 클래스 추가<br>
+                    en_04/gongmo.html -> 392 라인 f400 클래스 추가
+				</font>
+			</li>
+			<li>[01/21]
+				<font color="red">
+				<b>상단에 유투브 추가 &darr;</b><br>
+				1. main/index.html 83, 155 라인에 유트부 추가<br>
+				2. 01/01.html 77, 146(메뉴)라인에 유트부 추가 (흰색으로 시작)<br>
+				3. 04/04.html 80라인에 유트부 추가 (검정색으로 시작)<br>
+				4. main.css -> 373, 381, 382, 430라인 스타일 추가<br>
+				5. common.css -> 236, 240, 283라인 스타일 추가
+				</font>
+			</li>
+			<li>[01/22]
+				<font color="red">
+				<b>주석표기 [수정 0122]</b><br>01/01.html  : line 39 a태그 주소 수정, line 359 퀵메뉴  위치 변경, line 406 id="sub_wrap" 추가, line 98  input text에 title 추가<br>
+				select, button : focus 관련 수정, common.css, main.css, sub.css 수정<br>
+				main/index.html  : line 102  input text에 title 추가
+				</font>
+			</li>
+			<li>[01/23]
+				<font color="red"> <br>
+				common.js 수정 : 아코디언리스트  - 펼치기, 닫기 텍스트 수정 <br>
+				fullpage.min.js  수정 : 탭으로 포커스 옮기기 수정 <br>
+				<b>주석표기 [수정 0123]</b><br>
+				04/aca_login.html,04/05.html , 04/06.html : 팝업닫기 버튼 a를 button으로 수정 <br>
+				02/03_02.html : line390 달력 이전달, 다음달 텍스트 추가, line553 input에 title 추가 <br>
+				02/02_01.html : line373  title 추가 <br>
+				02/03.html : line388 이미지 alt 수정 <br>
+				03/01_01.html : line465, line549 이미지 alt 수정 <br>
+				04/03.html : line396 이미지 alt 수정, jquery.lightbox-0.5.js 수정
+				</font>
+			</li>
+			<li>[01/24]
+				<font color="red"> <br>
+				<b>주석표기 [수정 0123]</b><br>
+				06/02_01.html : line399 슬라이드 수동으로 변경 <br>
+				06/02_02.html : line399 슬라이드 수동으로 변경 <br>
+				06/02_03.html : line599 팝업닫기 버튼 a를 button으로 수정<br>
+				06/02_05.html : line568 팝업닫기 버튼 a를 button으로 수정<br>
+				04/01.html : line404 이미지 alt 입력 <br>
+				</font>
+			</li>
+			<li> [01/25]
+				<font color="red"> <br>
+				04/aca_login.html, 04/05.html, 04/06.html, 06/02_03.html, 06/02_05.html   :  팝업 //위치 수정 <br>
+				css/js 파일 전체적으로 업데이트 해주십시오
+				</font><br>
+				<font color="blue">슬라이드 - : main.js, common.js, 06/02_01.html, 06/02_02.html 스크립트에 자동/수동 주석처리 해놓았습니다.</font>
+			</li>
+			<li> [01/28] <br>
+				<font color="red"> <b>주석표기 [수정 0128]</b><br>
+				02/02_02_red.html : line485 //  레드존, 그린존, 블랙존, 블루존, 옐로우존 모두 동일하게 작업해주세요 <br>
+				06/prev03.html : line388 텍스트 추가 // 옥외(조각공원일대), 옥외(지하주차장) 모두 동일하게 작업해주세요
+				</font>
+			</li>
+			<li> [01/29] <br>
+				<font color="red"> <b>주석표기 [수정 0129]</b><br>
+				06/prev03.html : line388 텍스트 왼쪽정렬 수정, html 및 css 수정 <br>
+				main 전시부분 포커스 안잡힘 수정 // main.css 수정
+				</font>
+			</li>
+
+			<li> [01/30] <br>
+				<font color="red"> <b>주석표기 [수정 0130]</b><br>
+				03/02_031.html : line 902 이전페이지 버튼 위치 이동<br>
+				03/02_032.html : line 491 이전페이지 버튼 위치 이동<br>
+				 메인 : selection 색깔 소마포인트색깔로 수정 // (main.css 수정)<br>
+				 전체 : 주요서비스 슬라이드 수정 (main.js, common.js 수정)
+				</font>
+			</li>
+
+		</ol>
+	</div> -->
+	<!-- <div class="box total">
+		<h3>작업페이지수 : </h3>
+	</div> -->
+	<h4>코딩 목록</h4>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="htmllist">
+		<thead>
+			<tr class="head">
+				<td>No</td>
+				<td>Path</td>
+				<td>FileName</td>
+				<td>State</td>
+				<td>View</td>
+				<td>Update</td>
+				<td>Author</td>
+				<td>Remark</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="8">js</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/js/</td>
+				<td>jquery-1.12.4.min [95KB]</td>
+				<td class="end">end</td>
+				<td>-</td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>제이쿼리 라이브러리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/js/</td>
+				<td>swiper.min.js [118KB]</td>
+				<td class="end">end</td>
+				<td>-</td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>슬라이드 라이브러리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/js/</td>
+				<td>common.js</td>
+				<td class="end">end</td>
+				<td>-</td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>공통 제이쿼리</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">css</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>general.css</td>
+				<td class="end">end</td>
+				<td><a href="./css/general.css" target="_blank">View</a></td>
+				<td>2019-01-31</td>
+				<td></td>
+				<td>모든 css를 한 곳에 모아 링크시키는 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>common.css</td>
+				<td class="end">end</td>
+				<td><a href="./css/common.css" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>HTML속성 초기화 및 메인페이지를 제외한 모든 페이지에서 공통 사용되는  css</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/css/</td>
+				<td>layout.css</td>
+				<td class="ing">ing</td>
+				<td><a href="./css/layout.css" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>공통 레이아웃에 사용되는 css</td>
+            </tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>main.css</td>
+				<td class="ing">ing</td>
+				<td><a href="./css/main.css" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>메인 페이지에 사용되는 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>member.css</td>
+				<td class="ing">ing</td>
+				<td><a href="./css/member.css" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>회원가입, 로그인 등 회원 페이지에 사용되는 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>swiper.min.css</td>
+				<td class="end">end</td>
+				<td><a href="./css/swiper.min.css" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>슬라이드 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>font.css</td>
+				<td class="end">end</td>
+				<td><a href="./css/main.css" target="_blank">View</a></td>
+				<td>2018-11-23</td>
+				<td></td>
+				<td>로컬폰트 적용 css</td>
+			</tr>
+		</tbody>
+
+		<!--<tbody>
+			<tr>
+				<th colspan="8">가이드</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/</td>
+				<td>guide.html</td>
+				<td class="end">end</td>
+				<td><a href="guide.html" target="_blank">View</a></td>
+				<td>2019-01-14</td>
+				<td></td>
+				<td>guide 페이지</td>
+			</tr>
+		</tbody> -->
+
+
+		<tbody>
+			<tr>
+				<th colspan="8">메인</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>main.html</td>
+				<td class="end">end</td>
+				<td><a href="./main/main.html" target="_blank">View</a></td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>메인</td>
+			</tr>
+		</tbody>
+        <tbody>
+			<tr>
+				<th colspan="8">회원</th>
+			</tr>
+            <tr>
+                <td></td>
+				<td>/member/</td>
+				<td>login.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/login.html" target="_blank">View</a></td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>로그인</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>terms.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/terms.html" target="_blank">View</a></td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>약관동의</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>register.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/register.html" target="_blank">View</a></td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>정보입력</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>success.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/success.html" target="_blank">View</a></td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>회원가입완료</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>find.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/find.html" target="_blank">View</a></td>
+				<td>2019-01-30</td>
+				<td></td>
+				<td>아이디/비밀번호 찾기</td>
+			</tr>
+		</tbody>
+        <!-- <tbody>
+			<tr>
+				<th colspan="8">메인(영문)</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/en_main/</td>
+				<td>index.html</td>
+				<td class="end">end</td>
+				<td><a href="en_main/index.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>메인페이지</td>
+			</tr>
+		</tbody>
+
+
+		<tbody>
+			<tr>
+				<th colspan="8">01-전시</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/01/</td>
+				<td>01.html</td>
+				<td class="end">end</td>
+				<td><a href="01/01.html" target="_blank">View</a></td>
+				<td>2018-11-15</td>
+				<td></td>
+				<td>02_전시_01_전시일정_01_현재전시_01_List <font color="red">수정 18-12-11 : 푸터, 전체메뉴<br>수정 18-12-19 : 푸터, 수정 18-12-21 왼쪽 이미지 수정, 18-12-28 퀵메뉴 추가<br> 19-01-21 : 상단에 유투브 추가</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/01/</td>
+				<td>02.html</td>
+				<td class="end">end</td>
+				<td><a href="01/02.html" target="_blank">View</a></td>
+				<td>2018-11-15</td>
+				<td></td>
+				<td>02_전시_01_전시일정_02_전체전시_01_List</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/01/</td>
+				<td>02_view.html</td>
+				<td class="end">end</td>
+				<td><a href="01/02_view.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>02_전시_01_전시일정_02_전체전시_02_View <br>
+				02_전시_01_전시일정_02_전체전시_02_View(리뷰_off) <br>
+				02_전시_01_전시일정_03_후기등록 문자인증popup <br>
+				<font color="red"> 1. 전시 상세 페이지 하단에 [전시관련교육] 을 [전시연계프로그램]으로 변경<br>2. [현장스케치] 버튼을 [리뷰]로 변경<br> ** 사진첨부 부분 수정(2018-11-27)</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/01/</td>
+				<td>201.html</td>
+				<td class="end">end</td>
+				<td><a href="01/201.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>02_전시_02_소마갤러리_01_List <br>
+				02_전시_02_소마갤러리_01_List(상세검색) <font color="red">수정 18-12-14</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/01/</td>
+				<td>201_no_result.html</td>
+				<td class="end">end</td>
+				<td><a href="01/201_no_result.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>02_전시_02_소마갤러리_01_List(검색결과없음)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/01/</td>
+				<td>202.html</td>
+				<td class="end">end</td>
+				<td><a href="01/202.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>02_전시_02_소마갤러리_02_View</td>
+			</tr>
+		</tbody>
+        <tbody>
+			<tr>
+				<th colspan="8">01-전시(영문)</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/en_01/</td>
+				<td>01.html</td>
+				<td class="end">end</td>
+				<td><a href="en_01/01.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>01_전시_01_전시일정_01_현재전시_01_List(En)</td>
+			</tr>
+        </tbody>
+
+        <tbody>
+			<tr>
+				<th colspan="8">02-조각공원</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/02/</td>
+				<td>01.html</td>
+				<td class="end">end</td>
+				<td><a href="02/01.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_01_조각공원안내 <font color="red">수정 18-12-14</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_01.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_01.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_01_List(On) <font color="red">작품들 링크</font> <br><font color="red">수정 18-12-14</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_02_red.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_02_red.html" target="_blank">View</a></td>
+				<td>2018-12-03</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_02_작품맵상세 <font color="blue">(레드존)</font>
+					<br><font color="red">상단 서브비쥬얼 수정 <br>수정 18-12-20 : 핀 추가 및 이미지 교체</font>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_02_green.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_02_green.html" target="_blank">View</a></td>
+				<td>2018-12-05</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_02_작품맵상세 <font color="blue">(그린존)</font><font color="red">수정 18-12-24 : 19q번 추가</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_02_black.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_02_black.html" target="_blank">View</a></td>
+				<td>2018-12-05</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_02_작품맵상세 <font color="blue">(블랙존)</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_02_blue.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_02_blue.html" target="_blank">View</a></td>
+				<td>2018-12-05</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_02_작품맵상세 <font color="blue">(블루존)</font>  <font color="red">수정 18-12-24 : 핀 전체 번경</font> </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_02_yellow.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_02_yellow.html" target="_blank">View</a></td>
+				<td>2018-12-05</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_02_작품맵상세 <font color="blue">(옐로우존)</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_03_garo.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_03_garo.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_03_작품상세(가로형)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_03.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_03.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_03_작품상세 <font color="red">존 색깔 별 클래스 추가 (red, green, black, yellow, blue), 20181221 -> 이미지 크기 조정</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>02_04.html</td>
+				<td class="end">end</td>
+				<td><a href="02/02_04.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_02_작품맵_04_검색상세
+					<br><font color="red">상단 서브비쥬얼 수정<br>검색결과부분 수정</font>
+				</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>03.html</td>
+				<td class="end">end</td>
+				<td><a href="02/03.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_03_조각공원투어_01_투어안내</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>03_02.html</td>
+				<td class="end">end</td>
+				<td><a href="02/03_02.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_03_조각공원투어_02_예약신청(1step)<br>02_조각공원_03_조각공원투어_02_예약신청(2step)<br>02_조각공원_03_조각공원투어_02_예약신청(3step)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/02/</td>
+				<td>03_03.html</td>
+				<td class="end">end</td>
+				<td><a href="02/03_03.html" target="_blank">View</a></td>
+				<td>2018-11-29</td>
+				<td></td>
+				<td>02_조각공원_03_조각공원투어_03_예약확인 <font color="red">취소 버튼으로 변경</font></td>
+			</tr>
+
+		</tbody>
+        <tbody>
+			<tr>
+				<th colspan="8">02-조각공원(en)</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/en_02/</td>
+				<td>01.html</td>
+				<td class="end">end</td>
+				<td><a href="en_02/01.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>02_조각공원_01_조각공원안내(En)</td>
+			</tr>
+        </tbody>
+
+        <tbody>
+			<tr>
+				<th colspan="8">03-교육</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/03/</td>
+				<td>01_01.html</td>
+				<td class="end">end</td>
+				<td><a href="03/01_01.html" target="_blank">View</a></td>
+				<td>2018-11-16</td>
+				<td></td>
+				<td>03_교육_01_교육안내_01_정규 <font color="red">[2019-01-15] 382,462 라인에 f400 클래스 추가</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/03/</td>
+				<td>01_02.html</td>
+				<td class="end">end</td>
+				<td><a href="03/01_02.html" target="_blank">View</a></td>
+				<td>2018-11-16</td>
+				<td></td>
+				<td>03_교육_01_교육안내_02_관람체험 <font color="red">[2019-01-15] 380 라인에 f400 클래스 추가</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>01_03.html</td>
+				<td class="end">end</td>
+				<td><a href="03/01_03.html" target="_blank">View</a></td>
+				<td>2018-11-16</td>
+				<td></td>
+				<td>03_교육_01_교육안내_03_공교육연계 <font color="red">[2019-01-15] 380 라인에 f400 클래스 추가</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>01_04.html</td>
+				<td class="end">end</td>
+				<td><a href="03/01_04.html" target="_blank">View</a></td>
+				<td>2018-11-16</td>
+				<td></td>
+				<td>03_교육_01_교육안내_04_사회공헌<br>
+					<font color="red">[사회공헌 프로그램(행복한 미술관 나들이)] 타이틀 문구를 [행복한 미술관 나들이] 로 변경</font><br>
+                    <font color="red">[2019-01-15] 380 라인에 f400 클래스 추가</font>
+				</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_01.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_01.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_01_List</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_01_date.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_01_date.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_01_List(날짜선택영역추가)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_02.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_02.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_02_View</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_03_01.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_03_01.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_03_수강현황(개인)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_03_02.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_03_02.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_03_수강현황(단체)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_04_01.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_04_01.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_04_신청하기(개인)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_04_02.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_04_02.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_04_신청하기(단체)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_04_03.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_04_03.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_04_신청하기(작성전)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_05_01.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_05_01.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_05_신청완료(개인)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_05_02.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_05_02.html" target="_blank">View</a></td>
+				<td>2018-11-20</td>
+				<td></td>
+				<td>03_교육_02_교육신청_05_신청완료(단체)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_031.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_031.html" target="_blank">View</a></td>
+				<td>2018-12-17</td>
+				<td></td>
+				<td>03_교육_03_미술사연표 <font color="red">서양미술사 이미지 추가</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/03/</td>
+				<td>02_032.html</td>
+				<td class="end">end</td>
+				<td><a href="03/02_032.html" target="_blank">View</a></td>
+				<td>2018-12-17</td>
+				<td></td>
+				<td>03_교육_03_미술사연표_02_동양화</td>
+			</tr>
+		</tbody>
+        <tbody>
+			<tr>
+				<th colspan="8">03-교육(영문)</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/en_03/</td>
+				<td>01_01.html</td>
+				<td class="end">end</td>
+				<td><a href="en_03/01_01.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>Education > Regular Programs(교육-정규) <font color="red">[190117] 367,451 라인 f400 클래스 추가</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_03/</td>
+				<td>01_02.html</td>
+				<td class="end">end</td>
+				<td><a href="en_03/01_02.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>Education > Experience Program (교육-관람체험) <font color="red">[190117] 367 라인 f400 클래스 추가</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_03/</td>
+				<td>01_03.html</td>
+				<td class="end">end</td>
+				<td><a href="en_03/01_03.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>Education > Public Education-related Program (교육-공교육연계) <font color="red">[190117] 365 라인 f400 클래스 추가</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_03/</td>
+				<td>01_04.html</td>
+				<td class="end">end</td>
+				<td><a href="en_03/01_04.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>Education > Social Contribution Program (교육-사회공헌) <font color="red">[190117] 367 라인 f400 클래스 추가</font></td>
+			</tr>
+        </tbody>
+
+
+
+		<tbody>
+			<tr>
+				<th colspan="8">04-드로잉센터</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>01.html</td>
+				<td class="end">end</td>
+				<td><a href="04/01.html" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_01_List</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>02.html</td>
+				<td class="end">end</td>
+				<td><a href="04/02.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_02_View_01_작가정보 <br>04_드로잉센터_03_등록작가아카이브_02_View_01_작가정보(on)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>03.html</td>
+				<td class="end">end</td>
+				<td><a href="04/03.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_02_View_02_작품정보 <br>04_드로잉센터_03_등록작가아카이브_02_View_03_작품popup</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>aca_login.html</td>
+				<td class="end">end</td>
+				<td><a href="04/aca_login.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_03_아카이브이용방법 <br><font color="red">수정 18-12-17 id pw 찾기 팝업 추가 <br>수정 18-12-20 id 찾기 완료 팝업 추가</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>04.html</td>
+				<td class="end">end</td>
+				<td><a href="04/04.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_04_작가등록 <br> <font color="red">19-01-21 : 상단에 유투브 추가</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>05.html</td>
+				<td class="end">end</td>
+				<td><a href="04/05.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_05_정보관리 <font color="red">(아이디 창 input에서 div로 변경) <br>수정 18-12-17 탈퇴팝업 추가</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>06.html</td>
+				<td class="end">end</td>
+				<td><a href="04/06.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_06_프로필관리 <br>04_드로잉센터_03_등록작가아카이브_06_프로필관리(popup) <font color="red">페이지 전체 수정, (20181219 팝업 파일찾기 수정)</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>07.html</td>
+				<td class="end">end</td>
+				<td><a href="04/07.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_07_작품관리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>08_list.html</td>
+				<td class="end">end</td>
+				<td><a href="04/08_list.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_08_커뮤니티관리_01_List</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>08_view.html</td>
+				<td class="end">end</td>
+				<td><a href="04/08_view.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_03_등록작가아카이브_08_커뮤니티관리_02_View <span style="color:red;">(radio버튼으로 변경)</span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>09.html</td>
+				<td class="end">end</td>
+				<td><a href="04/09.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_04_소장자료 <span style="color:red">(페이징 수정)</span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>10.html</td>
+				<td class="end">end</td>
+				<td><a href="04/10.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_05_커뮤니티_01_List</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/04/</td>
+				<td>10_view.html</td>
+				<td class="end">end</td>
+				<td><a href="04/10_view.html" target="_blank">View</a></td>
+				<td>2018-11-09</td>
+				<td></td>
+				<td>04_드로잉센터_05_커뮤니티_01_view</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/04/</td>
+				<td>01_no_result.html</td>
+				<td class="end">end</td>
+				<td><a href="04/01_no_result.html" target="_blank">View</a></td>
+				<td>2018-11-13</td>
+				<td></td>
+				<td><font color="red">04_드로잉센터_03_등록작가아카이브_01_List :: 검색결과없음</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/04/</td>
+				<td>introduce.html</td>
+				<td class="end">end</td>
+				<td><a href="04/introduce.html" target="_blank">View</a></td>
+				<td>2018-11-16</td>
+				<td></td>
+				<td>04_드로잉센터_01_센터소개 <font color="red">[2019-01-15] 370 라인에 f400 클래스 추가</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/04/</td>
+				<td>gongmo.html</td>
+				<td class="end">end</td>
+				<td><a href="04/gongmo.html" target="_blank">View</a></td>
+				<td>2018-11-16</td>
+				<td></td>
+				<td>04_드로잉센터_02_작가공모안내 <font color="red">전체페이지 수정 18-12-19</font>, <font color="red">[2019-01-15] 392 라인에 f400 클래스 추가</font></td>
+			</tr>
+
+
+		</tbody>
+        <tbody>
+			<tr>
+				<th colspan="8">04-드로잉센터(영문)</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/en_04/</td>
+				<td>introduce.html</td>
+				<td class="end">end</td>
+				<td><a href="en_04/introduce.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>Drawing Center  > Introduction (드로잉센터-소개)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_04/</td>
+				<td>gongmo.html</td>
+				<td class="end">end</td>
+				<td><a href="en_04/gongmo.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>Drawing Center  > SOMA Drawing Center Drawing Competition <font color="red">[190117] 392 라인 f400 클래스 추가</font></td>
+			</tr>
+         </tbody>
+
+
+
+		<tbody>
+			<tr>
+				<th colspan="8">05-고객광장</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/05/</td>
+				<td>soma_list.html</td>
+				<td class="end">end</td>
+				<td><a href="05/soma_list.html" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>01_공지사항_01_소마소식_01_List <font color="red">수정 18-12-11</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/05/</td>
+				<td>soma_view.html</td>
+				<td class="end">end</td>
+				<td><a href="05/soma_view.html" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>01_공지사항_01_소마소식_02_View</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/05/</td>
+				<td>soma_hash.html</td>
+				<td class="end">end</td>
+				<td><a href="05/soma_hash.html" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>02_소마해시태그</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/05/</td>
+				<td>soma_searvice.html</td>
+				<td class="end">end</td>
+				<td><a href="05/soma_service.html" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>03_고객서비스 <font color="red">수정 18-12-11</font></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/05/</td>
+				<td>04.html</td>
+				<td class="end">end</td>
+				<td><a href="05/04.html" target="_blank">View</a></td>
+				<td>2018-12-06</td>
+				<td></td>
+				<td>05_고객광장_04_고객헌장_02_서비스이행표준안</td>
+			</tr>
+		</tbody>
+
+
+
+
+		<tbody>
+			<tr>
+				<th colspan="8">06-미술관안내</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>01.html</td>
+				<td class="end">end</td>
+				<td><a href="06/01.html" target="_blank">View</a></td>
+				<td>2018-11-06</td>
+				<td></td>
+				<td>01_미술관소개_01_인사말</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>02.html</td>
+				<td class="end">end</td>
+				<td><a href="06/02.html" target="_blank">View</a></td>
+				<td>2018-12-04</td>
+				<td></td>
+				<td>06_미술관안내_01_미술관소개_02_소마미술관안내 <font color="red">수정 18-12-14</font></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>03.html</td>
+				<td class="end">end</td>
+				<td><a href="06/03.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_01_미술관소개_03_연혁 <font color="red">수정 18-12-14</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>04.html</td>
+				<td class="end">end</td>
+				<td><a href="06/04.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_01_미술관소개_04_조직및업무 <font color="red">수정 18-12-11</font> <font color="red">수정 18-12-14</font></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>05.html</td>
+				<td class="end">end</td>
+				<td><a href="06/05.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_01_미술관소개_05_미술관MI</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>06.html</td>
+				<td class="end">end</td>
+				<td><a href="06/06.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_01_미술관소개_06_오시는길 <font color="red">수정 18-12-11</font></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>02_01.html</td>
+				<td class="end">end</td>
+				<td><a href="06/02_01.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_02_시설안내_01_전시1관 <font color="red">수정 18-12-14</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>02_02.html</td>
+				<td class="end">end</td>
+				<td><a href="06/02_02.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_02_시설안내_02_전시2관 <font color="red">수정 18-12-14</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>02_03.html</td>
+				<td class="end">end</td>
+				<td><a href="06/02_03.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_02_시설안내_03_소마드로잉센터 <font color="red">수정 18-12-14 <br>수정 18-12-18 :팝업</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>02_04.html</td>
+				<td class="end">end</td>
+				<td><a href="06/02_04.html" target="_blank">View</a></td>
+				<td>2018-11-14</td>
+				<td></td>
+				<td>06_미술관안내_02_시설안내_04_예술아카데미<br>
+					<font color="red">기타 프로그램 -> 사회공헌 프로그램 : 타이틀 및 텍스트 변경</font>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>02_05.html</td>
+				<td class="end">end</td>
+				<td><a href="06/02_05.html" target="_blank">View</a></td>
+				<td>2018-11-15</td>
+				<td></td>
+				<td>06_미술관안내_02_시설안내_05_세미나실 <font color="red">수정 18-12-14<br>수정 18-12-18 :팝업</font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>02_06.html</td>
+				<td class="end">end</td>
+				<td><a href="06/02_06.html" target="_blank">View</a></td>
+				<td>2018-11-15</td>
+				<td></td>
+				<td>06_미술관안내_02_시설안내_06_층별안내</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>prev01.html</td>
+				<td class="end">end</td>
+				<td><a href="06/prev01.html" target="_blank">View</a></td>
+				<td>2018-11-15</td>
+				<td></td>
+				<td>06_미술관안내_03_관람및예약_01_관람예절</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>prev02.html</td>
+				<td class="end">end</td>
+				<td><a href="06/prev02.html" target="_blank">View</a></td>
+				<td>2018-11-15</td>
+				<td></td>
+				<td>06_미술관안내_03_관람및예약_02_관람안내 <font color="red">수정 18-12-14</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/06/</td>
+				<td>prev03.html</td>
+				<td class="end">end</td>
+				<td><a href="06/prev03.html" target="_blank">View</a></td>
+				<td>2018-12-04</td>
+				<td></td>
+				<td>06_미술관안내_03_관람및대관_03_시설대관(세미나실)</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/06/</td>
+				<td>prev04.html</td>
+				<td class="end">end</td>
+				<td><a href="06/prev04.html" target="_blank">View</a></td>
+				<td>2018-12-04</td>
+				<td></td>
+				<td>06_미술관안내_03_관람및대관_03_시설대관(옥외) <font color="red">수정 18-12-14</font></td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/06/</td>
+				<td>prev05.html</td>
+				<td class="end">end</td>
+				<td><a href="06/prev05.html" target="_blank">View</a></td>
+				<td>2018-12-04</td>
+				<td></td>
+				<td>06_미술관안내_03_관람및대관_03_시설대관(옥외조각공원일대) <font color="red">수정 18-12-14</font></td>
+			</tr>
+			 <tr>
+				<td></td>
+				<td>/06/</td>
+				<td>greeting1.html</td>
+				<td class="end">end</td>
+				<td><a href="06/greeting1.html" target="_blank">View</a></td>
+				<td>2018-12-05</td>
+				<td></td>
+				<td>06_미술관안내_04_인사말_01_이사장인사말</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/06/</td>
+				<td>greeting2.html</td>
+				<td class="end">end</td>
+				<td><a href="06/greeting2.html" target="_blank">View</a></td>
+				<td>2018-12-14</td>
+				<td></td>
+				<td>06_미술관안내_04_인사말_02_명예관장인사말</td>
+			</tr>
+
+		</tbody>
+        <tbody>
+			<tr>
+				<th colspan="8">06-미술관안내(영문)</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>02.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/02.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > About the Museum > SOMA</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>03.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/03.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > About the Museum > History</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>05.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/05.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > About the Museum > MI</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>02_01.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/02_01.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > Museum Information > Museum 1 </td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>02_02.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/02_02.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > Museum Information > Museum 2 </td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>02_03.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/02_03.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > Museum Information > Drawing center </td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>02_04.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/02_04.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > Museum Information > Drawing center </td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>prev03.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/prev03.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > Museum Information > Seminar room </td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>prev02.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/prev02.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > Hours and Admission </td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/en_05/</td>
+				<td>06.html</td>
+				<td class="end">end</td>
+				<td><a href="en_05/06.html" target="_blank">View</a></td>
+				<td>2018-12-21</td>
+				<td></td>
+				<td>About SOMA  > Getting Here </td>
+			</tr>
+
+
+		</tbody>
+
+
+		<tbody>
+			<tr>
+				<th colspan="8">07-검색</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/07/</td>
+				<td>search.html</td>
+				<td class="end">end</td>
+				<td><a href="07/search.html" target="_blank">View</a></td>
+				<td>2018-11-02</td>
+				<td></td>
+				<td>07_검색<br>07_검색_01_검색결과(상세검색)<br>07_검색_01_검색결과 <font color="red">수정 18-12-14</font></td>
+			</tr>
+		</tbody>
+
+		<tbody>
+			<tr>
+				<th colspan="8">08-에러페이지</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/08/</td>
+				<td>error.html</td>
+				<td class="end">end</td>
+				<td><a href="08/error.html" target="_blank">View</a></td>
+				<td>2018-12-19</td>
+				<td></td>
+				<td>08_에러메세지 <font color="red">텍스트로 18-12-20</font></td>
+			</tr>
+		</tbody>
+
+		<tbody>
+			<tr>
+				<th colspan="8">09-이메일</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/09/</td>
+				<td>email.html</td>
+				<td class="end">end</td>
+				<td><a href="09/email.html" target="_blank">View</a></td>
+				<td>2018-12-20</td>
+				<td></td>
+				<td>12_이메일_03_휴면계정안내</td>
+			</tr>
+		</tbody>
+
+		<tbody>
+			<tr>
+				<th colspan="8">10-개인정보처리방침</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/10/</td>
+				<td>policy.html</td>
+				<td class="end">end</td>
+				<td><a href="10/policy.html" target="_blank">View</a></td>
+				<td>2018-12-20</td>
+				<td></td>
+				<td>10_footer_01_개인정보처리방침</td>
+			</tr>
+		</tbody> -->
+
+	</table>
+</div>
+<script>
+	var totalPageNum = 0;
+	$('tbody').each(function(idx){
+		var titTxt = $('tbody').eq(idx).find('th').text();
+		$('.total').append('<span class="tit_txt">' + titTxt + ': </span>')
+		$(this).find('tr').each(function(i){
+			$(this).find('td:first-child').text(i);
+			num = $(this).filter(':last-child').find('td:first-child').text();
+		});
+		$('.total').append('<strong>' + num + '</strong>');
+		totalPageNum += parseInt(num);
+	});
+	$('.total h3').append('<strong class="total_page_num">' + totalPageNum + '</strong>');
+	console.log($('tbody tr').length)
+</script>
+</body>
+</html>

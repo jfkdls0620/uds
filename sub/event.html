@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>우동사 - 이벤트</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery.dotdotdot.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+</head>
+<body>
+<div id="wrap" class="sub_wrap">
+    <header id="header">
+        <div class="inner-content fs">
+            <h1 class="logo"><a href="../main/main.html"><img src="../images/common/logo.png" alt="전국우리동네사진관찾기 우동사 바.로.찍.다"></a></h1>
+            <div id="left_modal"></div>
+            <div class="nav">
+                <div class="left_container">
+                    <a href="javascript:;" class="close_btn">닫기</a>
+                    <div class="left_inner">
+                        <div class="mobile_header">
+                            <div class="profile_img" style="background-image: url('../images/e/no-profile.png')"></div>
+                            <p>강경문</p>
+                            <button type="button"><span>로그아웃</span></button>
+                        </div>
+                        <ul class="gnb fs">
+                            <li><a href="../sub/studio_src.html">사진관 찾기</a></li>
+                            <li><a href="../sub/author_src.html">사진작가 찾기</a></li>
+                            <li><a href="../sub/event.html">이벤트</a></li>
+                            <li><a href="../sub/community.html">커뮤니티</a></li>
+                            <li><a href="../sub/store.html">입점신청</a></li>
+                        </ul>
+                        <div class="right">
+                            <ul class="fs">
+                                <li><a href="../mypage/myhome.html">마이페이지</a></li>
+                                <li><a href="../member/login.html">로그인</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m_btn_area">
+                <span class="m_btn">메뉴</span>
+            </div>
+        </div>
+    </header>
+    <div class="container_wrap">
+        <div class="container event">
+            <div class="visual">
+                <div class="swiper-container visual-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('../images/e/event_visual.jpg');background-color:#fdefe8"></div>
+                        <div class="swiper-slide" style="background-image: url('../images/e/event_visual.jpg');background-color:#fdefe8"></div>
+                        <div class="swiper-slide" style="background-image: url('../images/e/event_visual.jpg');background-color:#fdefe8"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="jq_wrap">
+                <div class="inner-content">
+                    <div class="tab_area">
+                        <ul>
+                            <li class="on"><a href="javascript:;" rel="tab1">사진관 이벤트</a></li>
+                            <li><a href="javascript:;" rel="tab2">사진작가 이벤트</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_wrap">
+                    <div class="photo_wrap fs">
+                        <div class="select_list">
+                            <div class="st wide">
+                                <select name="" >
+                                    <option value="">이벤트 상품 선택</option>
+                                </select>
+                            </div>
+                            <div class="wd">
+                                <div class="st">
+                                    <select name="">
+                                        <option value="">시/도 선택</option>
+                                    </select>
+                                </div>
+                                <div class="st">
+                                    <select name="">
+                                        <option value="">시/군/구 선택</option>
+                                    </select>
+                                </div>
+                                <div class="st src_btn">
+                                    <button type="button">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--// photo_wrap -->
+                </div>
+                <div class="inner-content">
+                    <div class="jq_con">
+                        <div class="evt_list">
+                            <!--// 이미지 리스트 -->
+                        </div>
+                        <div class="pagination">
+                            <a href="#" class="p-prev arr"><span>처음</span></a>
+                            <a href="#" class="prev"><span>이전</span></a>
+                            <a href="#" class="on">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#" class="next"><span>다음</span></a>
+                            <a href="#" class="n-next arr"><span>맨끝</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="inner-content">
+                <div class="txt_box">
+                    <ul class="top fs">
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                    <p class="txt1">
+                        <strong>(주)다오정보</strong><br>
+                        서울특별시 강남구 논현로 619, 양지빌딩 501호<br>
+                        TEL. 02-511-7350  |  FAX. 02-6455-1814
+                    </p>
+                    <p class="txt2">
+                        대표자명 : 김수영  |  사업자번호 : 109-87-00569<br>
+                        통신판매업신고증 : 2016-서울강남-02593호  |  서울보증보험 : 제 100-000-2016 0294-5294호
+                    </p>
+                    <p class="txt3">ⓒ dao</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script>
+    $(function() {
+        $("ul.gnb li").eq(2).find("a").addClass("on");
+
+        // visual
+        var mySwiper = new Swiper('.visual-swiper', {
+            autoHeight: true,
+            spaceBetween: 0,
+            speed: 400,
+            pagination: {
+                el: '.visual-swiper .swiper-pagination',
+                clickable: true,
+            },
+        });
+        startLoadFile();
+        //탭메뉴
+        $(".jq_wrap .tab_area ul li").on('click','a',function () {
+            $(".jq_wrap .tab_area li").removeClass("on");
+            $(this).closest("li").addClass("on");
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+
+        });
+    });
+    function startLoadFile(){
+        $.ajax({
+            url:'../js/event.json',
+            type:'POST',
+            dataType: 'json',
+            success: function(data){
+                createImages(data.images);
+                generateDot($(".dott"));
+            }
+        });
+    }
+
+    function createImages(arrImages) {
+        var strDOM = "";
+        for (var i = 0; i < arrImages.length; i++) {
+            // N번째 이미지 정보를 구하기
+            var image = arrImages[i];
+            // N번째 이미지 패널을 생성
+            strDOM += '<div class="step">';
+            strDOM += '<a href="#" style="background-image:url('+ image.url +')"></a>';
+            strDOM += '<div class="txt_box"><div class="heart_chk"><input type="checkbox" id="chk'+ image.id +'"><label for="chk'+ image.id +'"></label></div><span class="label">'+ image.label +'</span>';
+            strDOM += '<dl><dt class="dott">'+ image.title +'</dt><dd>'+ image.address +'</dd></dl>';
+            strDOM += '<p class="fav">추천 <span>'+ image.star +'</span>개</p>';
+            strDOM += '</div></div>';
+        }
+
+        // 이미지 컨테이너에 생성한 이미지 패널들을 추가하기
+        var $imageContainer = $(".evt_list");
+        $imageContainer.append(strDOM);
+    }
+</script>
+</body>
+</html>

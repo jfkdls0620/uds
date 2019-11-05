@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>우동사 - 작성 가능 후기</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery.dotdotdot.min.js"></script>
+</head>
+<body>
+<div id="wrap" class="sub_wrap">
+    <header id="header">
+        <div class="inner-content fs">
+            <h1 class="logo"><a href="../main/main.html"><img src="../images/common/logo.png" alt="전국우리동네사진관찾기 우동사 바.로.찍.다"></a></h1>
+            <div id="left_modal"></div>
+            <div class="nav">
+                <div class="left_container">
+                    <a href="javascript:;" class="close_btn">닫기</a>
+                    <div class="left_inner">
+                        <div class="mobile_header">
+                            <div class="profile_img" style="background-image: url('../images/e/no-profile.png')"></div>
+                            <p>강경문</p>
+                            <button type="button"><span>로그아웃</span></button>
+                        </div>
+                        <ul class="gnb fs">
+                            <li><a href="../sub/studio_src.html">사진관 찾기</a></li>
+                            <li><a href="../sub/author_src.html">사진작가 찾기</a></li>
+                            <li><a href="../sub/event.html">이벤트</a></li>
+                            <li><a href="../sub/community.html">커뮤니티</a></li>
+                            <li><a href="../sub/store.html">입점신청</a></li>
+                        </ul>
+                        <div class="right">
+                            <ul class="fs">
+                                <li><a href="../mypage/myhome.html">마이페이지</a></li>
+                                <li><a href="../member/login.html">로그인</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m_btn_area">
+                <span class="m_btn">메뉴</span>
+            </div>
+        </div>
+    </header>
+    <div class="container_wrap">
+        <div class="container review">
+            <div class="inner-content">
+                <h2 class="tit">김철수님</h2>
+                <div class="tab_area">
+                    <ul>
+                        <li><a href="../mypage/mypage01.html">상담내역</a></li>
+                        <li><a href="../mypage/mypage02.html">이벤트</a></li>
+                        <li><a href="../mypage/mypage03.html">후기</a></li>
+                        <li><a href="../mypage/mypage04.html">관심 사진관/사진작가</a></li>
+                        <li><a href="../mypage/mypage05.html">개인정보관리</a></li>
+                    </ul>
+                </div>
+                <div class="line_tab">
+                    <ul>
+                        <li><a href="../mypage/mypage03.html">작성 가능 후기 </a></li>
+                        <li><a href="../mypage/mypage03_2.html">내가 쓴 후기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list_box img_type col-4">
+                <ul>
+                    <!-- 이미지 리스트 -->
+                </ul>
+            </div>
+            <div class="pagination">
+                <a href="#" class="p-prev arr"><span>처음</span></a>
+                <a href="#" class="prev"><span>이전</span></a>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="next"><span>다음</span></a>
+                <a href="#" class="n-next arr"><span>맨끝</span></a>
+            </div>
+        </div>
+        <footer>
+            <div class="inner-content">
+                <div class="txt_box">
+                    <ul class="top fs">
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                    <p class="txt1">
+                        <strong>(주)다오정보</strong><br>
+                        서울특별시 강남구 논현로 619, 양지빌딩 501호<br>
+                        TEL. 02-511-7350  |  FAX. 02-6455-1814
+                    </p>
+                    <p class="txt2">
+                        대표자명 : 김수영  |  사업자번호 : 109-87-00569<br>
+                        통신판매업신고증 : 2016-서울강남-02593호  |  서울보증보험 : 제 100-000-2016 0294-5294호
+                    </p>
+                    <p class="txt3">ⓒ dao</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script>
+    $(function(){
+        $(".tab_area ul li").eq(2).addClass("on");
+        $(".line_tab ul li").eq(0).addClass("on");
+
+        //이미지 리스트
+        startLoadFile();
+
+    });
+    // 이미지 리스트
+    function startLoadFile(){
+        $.ajax({
+            url:'../js/images2.json',
+            type:'POST',
+            dataType: 'json',
+            success: function(data){
+                createImages(data.images);
+                generateDot($(".dott"));
+            }
+        });
+    }
+
+    function createImages(arrImages) {
+        var strDOM = "";
+        for (var i = 0; i < arrImages.length; i++) {
+            // N번째 이미지 정보를 구하기
+            var image = arrImages[i];
+            // N번째 이미지 패널을 생성
+            strDOM += '<li>';
+            strDOM += '<a href="#">';
+            strDOM += '<div class="img-box" style="background-image:url('+ image.url +')"></div>';
+            strDOM += '<div class="con-box">';
+            strDOM += '<span class="label">'+ image.label +'</span>';
+            strDOM += '<span class="label type02">'+ image.label2 +'</span>';
+            strDOM += '<dl><dt class="dott">'+ image.title +'</dt><dd class="dott">'+ image.subtitle +'</dd></dl>';
+            strDOM += '<p class="date">'+ image.date +'</p>';
+            strDOM += '</div></a></li>';
+        }
+
+        // 이미지 컨테이너에 생성한 이미지 패널들을 추가하기
+        var $imageContainer = $(".list_box.img_type ul");
+        $imageContainer.append(strDOM);
+    }
+</script>
+</body>
+</html>

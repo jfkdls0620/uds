@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>우동사 - 마이페이지</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery.dotdotdot.min.js"></script>
+</head>
+<body>
+<div id="wrap" class="sub_wrap myhome">
+    <header id="header">
+        <div class="inner-content fs">
+            <h1 class="logo"><a href="../main/main.html"><img src="../images/common/logo.png" alt="전국우리동네사진관찾기 우동사 바.로.찍.다"></a></h1>
+            <div id="left_modal"></div>
+            <div class="nav">
+                <div class="left_container">
+                    <a href="javascript:;" class="close_btn">닫기</a>
+                    <div class="left_inner">
+                        <div class="mobile_header">
+                            <div class="profile_img" style="background-image: url('../images/e/no-profile.png')"></div>
+                            <p>강경문</p>
+                            <button type="button"><span>로그아웃</span></button>
+                        </div>
+                        <ul class="gnb fs">
+                            <li><a href="../sub/studio_src.html">사진관 찾기</a></li>
+                            <li><a href="../sub/author_src.html">사진작가 찾기</a></li>
+                            <li><a href="../sub/event.html">이벤트</a></li>
+                            <li><a href="../sub/community.html">커뮤니티</a></li>
+                            <li><a href="../sub/store.html">입점신청</a></li>
+                        </ul>
+                        <div class="right">
+                            <ul class="fs">
+                                <li><a href="../mypage/myhome.html">마이페이지</a></li>
+                                <li><a href="../member/login.html">로그인</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m_btn_area">
+                <span class="m_btn">메뉴</span>
+            </div>
+        </div>
+    </header>
+    <div class="container_wrap">
+        <div class="container terms">
+            <div class="inner-content">
+                <h2 class="tit">김철수님</h2>
+                <div class="content">
+                    <div class="ul_box">
+                        <ul>
+                            <li>
+                                <a href="../mypage/mypage01.html">
+                                    <dl>
+                                        <dt>상담내역</dt>
+                                        <dd>6</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../mypage/mypage02.html">
+                                    <dl>
+                                        <dt>이벤트</dt>
+                                        <dd>8</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../mypage/mypage04.html">
+                                    <dl>
+                                        <dt>관심 사진관/사진작가</dt>
+                                        <dd>10</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../mypage/mypage03.html">
+                                    <dl>
+                                        <dt>후기</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chk_box_area">
+                        <ul class="fs">
+                            <li>
+                                <div class="cus_chk small">
+                                    <input type="checkbox" id="terms4">
+                                    <label for="terms4"><i></i>개인정보 3자 제공 및 위탁 사항 (선택)</label>
+                                </div>
+                                <button type="button" class="view_btn" onclick="fnShowPop('terms_pop04')">내용보기</button>
+                            </li>
+                            <li>
+                                <div class="cus_chk small">
+                                    <input type="checkbox" id="terms5">
+                                    <label for="terms5"><i></i>마케팅 정보 수신 동의 (선택)</label>
+                                </div>
+                                <button type="button" class="view_btn" onclick="fnShowPop('terms_pop05')">내용보기</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="inner-content">
+                <div class="txt_box">
+                    <ul class="top fs">
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                    <p class="txt1">
+                        <strong>(주)다오정보</strong><br>
+                        서울특별시 강남구 논현로 619, 양지빌딩 501호<br>
+                        TEL. 02-511-7350  |  FAX. 02-6455-1814
+                    </p>
+                    <p class="txt2">
+                        대표자명 : 김수영  |  사업자번호 : 109-87-00569<br>
+                        통신판매업신고증 : 2016-서울강남-02593호  |  서울보증보험 : 제 100-000-2016 0294-5294호
+                    </p>
+                    <p class="txt3">ⓒ dao</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- 개인정보 3자 제공 및 위탁 사항(선택) -->
+<div class="modal terms" id="terms_pop04">
+    <div class="modal_container">
+        <div class="m_content">
+            <div class="box">
+                <div class="tit">
+                    <h2>개인정보 3자 제공 및 위탁 사항(선택)</h2>
+                    <button type="button" class="pop_close" onclick="fnHidePop('terms_pop04')">닫기</button>
+                </div>
+                <div class="con">
+                    <p>우동사는 아래의 목적으로 개인정보를 3자 제공 및 위탁하며, 회원의 개인정보를 안전하게 취급하는데 최선을 다합니다.<br><br>
+                        개인정보 3자 제공 및 위탁 사항에 대한 안내<br>
+                        ① 개인정보를 제공 받는 자 : 우동사<br>
+                        ② 개인정보를 제공받는 자의 개인정보 이용 목적 : 고객상담<br>
+                        ③ 제공하는 개인정보의 항목 : 성명, 휴대폰번호<br>
+                        ④ 개인정보를 제공받는 자의 개인정보 보유 및 이용기간 : 제공 후 1년<br><br>
+                        동의를 거부할 수 있으며, 동의를 거부하더라도 우동사 서비스를 이용할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// 개인정보 3자 제공 및 위탁 사항(선택) -->
+<!-- 마케팅 정보수신 동의(선택) -->
+<div class="modal terms" id="terms_pop05">
+    <div class="modal_container">
+        <div class="m_content">
+            <div class="box">
+                <div class="tit">
+                    <h2>마케팅 정보수신 동의(선택)</h2>
+                    <button type="button" class="pop_close" onclick="fnHidePop('terms_pop05')">닫기</button>
+                </div>
+                <div class="con">
+                    <p>
+                        개인정보보호법 제22조 제4항에 의해 선택정보 사항에 대해서는 기재하지 않으셔도 서비스를 이용하실 수 있습니다.<br><br>
+                        ① 마케팅 및 광고에의 활용신규 서비스(제품) 개발 및 맞춤 서비스 제공, 이벤트 및 광고성 정보 제공 및 참여기회 제공,
+                        인구통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의 유효성 확인,
+                        접속빈도 파악 또는 회원의 서비스 이용에 대한 통계 등을 목적으로 개인정보를 처리합니다.<br><br>
+                        ② 우동사는 서비스를 운용함에 있어 각종 정보를 서비스 화면, 전화, e-mail, SMS,
+                        우편물, 앱푸시 등의 방법으로 우동사 회원에게 제공할 수 있으며, 의무적으로 안내되어야 하는 정보성 내용은 수신동의 여부와 무관하게 제공됩니다.<br><br>
+                        동의를 거부할 수 있으며, 동의를 거부하더라도 우동사 서비스를 이용할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// 마케팅 정보수신 동의(선택)-->
+<script>
+    $(function(){
+        $(".tab_area ul li").eq(2).addClass("on");
+        $(".line_tab ul li").eq(0).addClass("on");
+
+    });
+</script>
+</body>
+</html>
